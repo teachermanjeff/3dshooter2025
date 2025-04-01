@@ -1,9 +1,6 @@
-[gd_scene load_steps=8 format=3 uid="uid://b50a2s7mv2ddx"]
+[gd_scene load_steps=6 format=3 uid="uid://b50a2s7mv2ddx"]
 
-[ext_resource type="Script" path="res://player.gd" id="1_xpnp2"]
 [ext_resource type="ArrayMesh" uid="uid://cm40655jmqf2j" path="res://Models/LowPolly Target Range.obj" id="2_w20w6"]
-
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ppdsw"]
 
 [sub_resource type="Skin" id="Skin_yrbm6"]
 
@@ -21,14 +18,6 @@ size = Vector3(24.0348, 0.499023, 25.754)
 size = Vector3(27.2647, 5.47162, 1)
 
 [node name="3D scene" type="Node3D"]
-
-[node name="Player" type="CharacterBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
-script = ExtResource("1_xpnp2")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
-shape = SubResource("CapsuleShape3D_ppdsw")
-debug_color = Color(0.228008, 0.509038, 1, 0.42)
 
 [node name="LowPollyTargetRange" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.29621, 0.791488, 1.66878)
