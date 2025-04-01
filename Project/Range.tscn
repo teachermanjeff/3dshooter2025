@@ -27,6 +27,7 @@ script = ExtResource("1_xpnp2")
 shape = SubResource("CapsuleShape3D_ppdsw")
 debug_color = Color(0.228008, 0.509038, 1, 0.42)
 
+
 [node name="LowPollyTargetRange" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.29621, 0.791488, 1.66878)
 mesh = ExtResource("2_w20w6")
