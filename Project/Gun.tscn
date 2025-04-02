@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://dknihd8d8aqo4"]
+
+[ext_resource type="PackedScene" uid="uid://kp5spekfthct" path="res://Models/low_poly_animated_and_textured_revolver/scene.gltf" id="1_jpqjm"]
+
+[node name="Sketchfab_Scene" instance=ExtResource("1_jpqjm")]
+transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, 0, 0, 0)
+
+[node name="Skeleton3D" parent="Sketchfab_model/d0d5d4f9f2ea426abac37ad805e4834f_fbx/Object_2/RootNode/Armature/Object_6" index="0"]
+bones/1/rotation = Quaternion(0.875557, -1.15184e-07, -2.08749e-07, 0.483115)
+bones/2/rotation = Quaternion(0.993789, -7.70431e-07, -1.16844e-06, -0.11128)
+bones/4/rotation = Quaternion(-0.277498, 2.29055e-07, 6.61606e-08, 0.960726)
+bones/6/rotation = Quaternion(-0.277498, 2.29055e-07, 6.61606e-08, 0.960726)
