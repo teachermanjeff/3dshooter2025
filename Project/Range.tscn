@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://b50a2s7mv2ddx"]
+[gd_scene load_steps=8 format=3 uid="uid://b50a2s7mv2ddx"]
 
 [ext_resource type="ArrayMesh" uid="uid://cm40655jmqf2j" path="res://Models/LowPolly Target Range.obj" id="2_w20w6"]
+[ext_resource type="PackedScene" uid="uid://clk1lky1xhkhg" path="res://player.tscn" id="2_yrbm6"]
 
 [sub_resource type="Skin" id="Skin_yrbm6"]
 
@@ -58,3 +59,6 @@ shape = SubResource("BoxShape3D_w20w6")
 
 [node name="CollisionShape3D4" type="CollisionShape3D" parent="LowPollyTargetRange/Sides"]
 shape = SubResource("ConcavePolygonShape3D_w20w6")
+
+[node name="player" parent="." instance=ExtResource("2_yrbm6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.14468, 0)
