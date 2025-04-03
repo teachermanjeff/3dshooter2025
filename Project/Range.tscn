@@ -84,4 +84,8 @@ environment = SubResource("Environment_8203o")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldEnvironment"]
 transform = Transform3D(0.460516, 0.489472, -0.740501, -0.304813, 0.870699, 0.38597, 0.833675, 0.0479697, 0.550168, -94.4337, 20.2746, 48.0617)
-light_energy = 1.97
+light_energy = 1.162
+light_volumetric_fog_energy = 0.0
+shadow_enabled = true
+shadow_normal_bias = 0.0
+shadow_opacity = 0.75
