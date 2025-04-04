@@ -54,4 +54,4 @@ func _process(delta):
 		can_shoot = true
 	if current_ammo <= 0:
 		can_shoot = false
-	print(current_ammo)
+	#print(current_ammo)
