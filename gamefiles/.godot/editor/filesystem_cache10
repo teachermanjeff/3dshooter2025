@@ -1,13 +1,16 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1743793902
-bullet.gd::GDScript::4718103991413512519::1743793813::0::1::::<>RigidBody3D<><>0<>0<><>::
-bullet.tscn::PackedScene::6985446777843691891::1743793813::0::1::::<><><>0<>0<><>::uid://b8hqqo3e2x1dr::::res://bullet.gd<>uid://qdcl0b8ad5jh::::res://Models/bullet/bullet.obj
-gun.gd::GDScript::3433947106378228861::1743793813::0::1::::<>Node3D<><>0<>0<><>::
-Gun.tscn::PackedScene::7888485843490890601::1743793811::0::1::::<><><>0<>0<><>::uid://kp5spekfthct::::res://Models/low_poly_animated_and_textured_revolver/scene.gltf<>uid://bo6ouv343b26l::::res://gun.gd<>uid://c6r2j10pawscx::::res://bullet.tscn<>uid://bfvku6h40psd::::res://Sounds/gunshot.wav<>uid://cbpdubhdmxbad::::res://Sounds/revolverhammer.wav<>uid://cga5737h3w8u0::::res://Sounds/revolver click.wav
+::res://::1743796065
+bullet.gd::GDScript::4718103991413512519::1743794981::0::1::::<>RigidBody3D<><>0<>0<><>::
+bullet.tscn::PackedScene::6985446777843691891::1743795538::0::1::::<><><>0<>0<><>::uid://b8hqqo3e2x1dr::::res://bullet.gd<>uid://qdcl0b8ad5jh::::res://Models/bullet/bullet.obj
+Denali,+Alaska.jpg::CompressedTexture2D::2080210115357346397::1743796065::1743796076::1::::<><><>0<>0<>858651914485946ca772ccdcdd0879df<>res://.godot/imported/Denali,+Alaska.jpg-dbad757b292ceb4a34e2d97a9ff26ca5.ctex::
+gun.gd::GDScript::3433947106378228861::1743794674::0::1::::<>Node3D<><>0<>0<><>::
+Gun.tscn::PackedScene::7888485843490890601::1743795537::0::1::::<><><>0<>0<><>::uid://kp5spekfthct::::res://Models/low_poly_animated_and_textured_revolver/scene.gltf<>uid://bo6ouv343b26l::::res://gun.gd<>uid://c6r2j10pawscx::::res://bullet.tscn<>uid://bfvku6h40psd::::res://Sounds/gunshot.wav<>uid://cbpdubhdmxbad::::res://Sounds/revolverhammer.wav<>uid://cga5737h3w8u0::::res://Sounds/revolver click.wav
 icon.svg::CompressedTexture2D/CompressedTexture2D::4434899646064832379::1743793813::1743793813::1::::<><><>0<>0<>31b7702c4a99cd788365fb8f289979f5<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 player.gd::GDScript::8349205193649487639::1743793813::0::1::::<>CharacterBody3D<><>0<>0<><>::
-player.tscn::PackedScene::5567161274011189124::1743793813::0::1::::<><><>0<>0<><>::uid://dq7ogpkf8asip::::res://player.gd<>uid://dknihd8d8aqo4::::res://Gun.tscn
-Range.tscn::PackedScene::4543744648549396017::1743793812::0::1::::<><><>0<>0<><>::uid://cm40655jmqf2j::::res://Models/LowPolly Target Range.obj<>uid://clk1lky1xhkhg::::res://player.tscn
+player.tscn::PackedScene::5567161274011189124::1743795536::0::1::::<><><>0<>0<><>::uid://dq7ogpkf8asip::::res://player.gd<>uid://dknihd8d8aqo4::::res://Gun.tscn
+Range.tscn::PackedScene::4543744648549396017::1743795535::0::1::::<><><>0<>0<><>::uid://cm40655jmqf2j::::res://Models/LowPolly Target Range.obj<>uid://clk1lky1xhkhg::::res://player.tscn
+MainMenu.tscn::PackedScene::1711475829348298032::1743795539::0::1::::<><><>0<>0<><>::
+::res://Graphics/::1743795604
 ::res://Models/::1743793812
 LowPolly Target Range.obj::Mesh/Mesh::5676549352810764819::1743793811::1743793811::1::::<><><>0<>0<>c5bff99f6c49fa4eb8e0be695d2d3bb6<>res://.godot/imported/LowPolly Target Range.obj-6cb4d5d6c186a6846a2afdcd14f54cd8.mesh<*>res://.godot/imported/LowPolly Target Range.obj-6cb4d5d6c186a6846a2afdcd14f54cd8.mesh::
 ::res://Models/bullet/::1743793811
@@ -23,7 +26,8 @@ pistol_baseColor.png::CompressedTexture2D/CompressedTexture2D::38944994835374483
 PM3D_Cylinder3D_9_baseColor.png::CompressedTexture2D/CompressedTexture2D::2544421263487459857::1743793812::1743793812::1::::<><><>0<>0<>b5306ef62d442483dbf38d48c4520ff6<>res://.godot/imported/PM3D_Cylinder3D_9_baseColor.png-4497dbc7c1cd64f7c1d01af9976e8e70.s3tc.ctex::
 PM3D_Cylinder3D_11_baseColor.png::CompressedTexture2D/CompressedTexture2D::2323302006146636181::1743793812::1743793812::1::::<><><>0<>0<>9991837f7458a85cd0b3bc03bca8248d<>res://.godot/imported/PM3D_Cylinder3D_11_baseColor.png-c25f6e87b781b1ba2672337c9a79d395.s3tc.ctex::
 UMesh_PM3D_Cylinder3D_5_baseColor.png::CompressedTexture2D/CompressedTexture2D::2212531774456537661::1743793812::1743793812::1::::<><><>0<>0<>1054f1da62c7f8337567decd845f93b9<>res://.godot/imported/UMesh_PM3D_Cylinder3D_5_baseColor.png-0918c066fb5285dea67bb523a960853d.s3tc.ctex::
-::res://Sounds/::1743793813
+::res://Sounds/::1743796067
+Denali,+Alaska.jpg::CompressedTexture2D::5563694954150985472::1743796067::1743796076::1::::<><><>0<>0<>fe630e2e71e7e0be5632953418722a2a<>res://.godot/imported/Denali,+Alaska.jpg-afb353934231639594d6ad9c4b491569.ctex::
 gunshot.wav::AudioStreamWAV/AudioStreamWAV::81804745909218011::1743793812::1743793813::1::::<><><>0<>0<>e981581bc9c19cd037074e8734a552d2<>res://.godot/imported/gunshot.wav-89ab16bce8b8bfb24d3d7f504544ddb4.sample::
 revolver click.wav::AudioStreamWAV/AudioStreamWAV::5195854604846261269::1743793813::1743793907::1::::<><><>0<>0<>9a0bd65001cb6e7e9daf1fa7b336010d<>res://.godot/imported/revolver click.wav-4693dafacbf67f61d88719a3b1aa220a.sample::
 revolverhammer.wav::AudioStreamWAV/AudioStreamWAV::4874213807681756959::1743793813::1743793813::1::::<><><>0<>0<>64914c29e1d05a8740f1ff37c2845d21<>res://.godot/imported/revolverhammer.wav-2baf30cba27ac8ef3f363346f2d73387.sample::
