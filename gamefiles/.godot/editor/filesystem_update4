@@ -1,6 +1,5 @@
-res://bullet.tscn
 res://Gun.tscn
-res://bullet.gd
 res://gun.gd
 res://Range.tscn
 res://player.tscn
+res://bullet.tscn

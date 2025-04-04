@@ -1,28 +1,29 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1743742950
-bullet.gd::GDScript::4718103991413512519::1743742942::0::1::::<>RigidBody3D<><>0<>0<><>::
-bullet.tscn::PackedScene::6985446777843691891::1743742950::0::1::::<><><>0<>0<><>::uid://b8hqqo3e2x1dr::::res://bullet.gd<>uid://qdcl0b8ad5jh::::res://Models/bullet/bullet.obj
-gun.gd::GDScript::3433947106378228861::1743742903::0::1::::<>Node3D<><>0<>0<><>::
-Gun.tscn::PackedScene::7888485843490890601::1743742947::0::1::::<><><>0<>0<><>::uid://kp5spekfthct::::res://Models/low_poly_animated_and_textured_revolver/scene.gltf<>uid://bo6ouv343b26l::::res://gun.gd<>uid://c6r2j10pawscx::::res://bullet.tscn<>uid://bfvku6h40psd::::res://Sounds/gunshot.wav
-icon.svg::CompressedTexture2D/CompressedTexture2D::4434899646064832379::1743725871::1743726362::1::::<><><>0<>0<>31b7702c4a99cd788365fb8f289979f5<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-player.gd::GDScript::8349205193649487639::1743726941::0::1::::<>CharacterBody3D<><>0<>0<><>::
-player.tscn::PackedScene::5567161274011189124::1743742945::0::1::::<><><>0<>0<><>::uid://dq7ogpkf8asip::::res://player.gd<>uid://dknihd8d8aqo4::::res://Gun.tscn
-Range.tscn::PackedScene::4543744648549396017::1743742940::0::1::::<><><>0<>0<><>::uid://cm40655jmqf2j::::res://Models/LowPolly Target Range.obj<>uid://clk1lky1xhkhg::::res://player.tscn
-::res://Models/::1743728073
-LowPolly Target Range.obj::Mesh/Mesh::5676549352810764819::1743725867::1743726368::1::::<><><>0<>0<>c5bff99f6c49fa4eb8e0be695d2d3bb6<>res://.godot/imported/LowPolly Target Range.obj-6cb4d5d6c186a6846a2afdcd14f54cd8.mesh<*>res://.godot/imported/LowPolly Target Range.obj-6cb4d5d6c186a6846a2afdcd14f54cd8.mesh::
-::res://Models/bullet/::1743728078
-bullet.obj::Mesh/Mesh::1129357025317264169::1743728042::1743728078::1::::<><><>0<>0<>672fa0a991ca2ea1d50d3502bc5c187a<>res://.godot/imported/bullet.obj-5fea36ee1a0cd9e727acb46f13aaf819.mesh<*>res://.godot/imported/bullet.obj-5fea36ee1a0cd9e727acb46f13aaf819.mesh::
-::res://Models/low_poly_animated_and_textured_revolver/::1743726370
-license.txt::TextFile/TextFile::-1::1743725868::0::1::::<><><>0<>0<><>::
-scene.gltf::PackedScene/PackedScene::734708551255763227::1743725868::1743726370::1::::<><><>0<>0<>ca260eb18dcc41d146b59315a7bd2790<>res://.godot/imported/scene.gltf-ca0b61f44d80ec8842c642184344eeea.scn::uid://bs7e6ggsmdtai::::res://Models/low_poly_animated_and_textured_revolver/textures/GunMaterial_baseColor.png
-::res://Models/low_poly_animated_and_textured_revolver/textures/::1743726362
-GunMaterial_baseColor.png::CompressedTexture2D/CompressedTexture2D::3716178510132655340::1743725868::1743726362::1::::<><><>0<>0<>025653f5681335f6a0ef9ce92699b935<>res://.godot/imported/GunMaterial_baseColor.png-c995e9c65ee6521e97545b04ac6febbd.s3tc.ctex::
-::res://Models/textures/::1743726365
-Material_baseColor.png::CompressedTexture2D/CompressedTexture2D::907656037496988692::1743725869::1743726363::1::::<><><>0<>0<>e164a82e2e105e5de98274929e9a0a1f<>res://.godot/imported/Material_baseColor.png-0981fd3273c39431ebdbeb54695e76de.s3tc.ctex::
-pistol_baseColor.png::CompressedTexture2D/CompressedTexture2D::3894499483537448315::1743725870::1743726365::1::::<><><>0<>0<>4cf9e6e83b7a7c1aa8e48632a92e8ac8<>res://.godot/imported/pistol_baseColor.png-3265fdc13a50f3eace8cfb1920aa7b55.s3tc.ctex::
-PM3D_Cylinder3D_9_baseColor.png::CompressedTexture2D/CompressedTexture2D::2544421263487459857::1743725869::1743726364::1::::<><><>0<>0<>b5306ef62d442483dbf38d48c4520ff6<>res://.godot/imported/PM3D_Cylinder3D_9_baseColor.png-4497dbc7c1cd64f7c1d01af9976e8e70.s3tc.ctex::
-PM3D_Cylinder3D_11_baseColor.png::CompressedTexture2D/CompressedTexture2D::2323302006146636181::1743725869::1743726363::1::::<><><>0<>0<>9991837f7458a85cd0b3bc03bca8248d<>res://.godot/imported/PM3D_Cylinder3D_11_baseColor.png-c25f6e87b781b1ba2672337c9a79d395.s3tc.ctex::
-UMesh_PM3D_Cylinder3D_5_baseColor.png::CompressedTexture2D/CompressedTexture2D::2212531774456537661::1743725870::1743726364::1::::<><><>0<>0<>1054f1da62c7f8337567decd845f93b9<>res://.godot/imported/UMesh_PM3D_Cylinder3D_5_baseColor.png-0918c066fb5285dea67bb523a960853d.s3tc.ctex::
-::res://Sounds/::1743743075
-gunshot.wav::AudioStreamWAV::81804745909218011::1743738125::1743738166::1::::<><><>0<>0<>e981581bc9c19cd037074e8734a552d2<>res://.godot/imported/gunshot.wav-89ab16bce8b8bfb24d3d7f504544ddb4.sample::
-revolverhammer.wav::AudioStreamWAV::4874213807681756959::1743743041::1743743078::1::::<><><>0<>0<>64914c29e1d05a8740f1ff37c2845d21<>res://.godot/imported/revolverhammer.wav-2baf30cba27ac8ef3f363346f2d73387.sample::
+::res://::1743777387
+bullet.gd::GDScript/GDScript::4718103991413512519::1743743814::0::1::::<>RigidBody3D<><>0<>0<><>::
+bullet.tscn::PackedScene::6985446777843691891::1743743987::0::1::::<><><>0<>0<><>::uid://b8hqqo3e2x1dr::::res://bullet.gd<>uid://qdcl0b8ad5jh::::res://Models/bullet/bullet.obj
+gun.gd::GDScript/GDScript::3433947106378228861::1743743814::0::1::::<>Node3D<><>0<>0<><>::
+Gun.tscn::PackedScene::7888485843490890601::1743743985::0::1::::<><><>0<>0<><>::uid://kp5spekfthct::::res://Models/low_poly_animated_and_textured_revolver/scene.gltf<>uid://bo6ouv343b26l::::res://gun.gd<>uid://c6r2j10pawscx::::res://bullet.tscn<>uid://bfvku6h40psd::::res://Sounds/gunshot.wav<>uid://cbpdubhdmxbad::::res://Sounds/revolverhammer.wav
+icon.svg::CompressedTexture2D/CompressedTexture2D::4434899646064832379::1743743814::1743743815::1::::<><><>0<>0<>31b7702c4a99cd788365fb8f289979f5<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+player.gd::GDScript/GDScript::8349205193649487639::1743743815::0::1::::<>CharacterBody3D<><>0<>0<><>::
+player.tscn::PackedScene::5567161274011189124::1743743983::0::1::::<><><>0<>0<><>::uid://dq7ogpkf8asip::::res://player.gd<>uid://dknihd8d8aqo4::::res://Gun.tscn
+Range.tscn::PackedScene::4543744648549396017::1743743981::0::1::::<><><>0<>0<><>::uid://cm40655jmqf2j::::res://Models/LowPolly Target Range.obj<>uid://clk1lky1xhkhg::::res://player.tscn
+::res://Models/::1743743810
+LowPolly Target Range.obj::Mesh/Mesh::5676549352810764819::1743743810::1743743810::1::::<><><>0<>0<>c5bff99f6c49fa4eb8e0be695d2d3bb6<>res://.godot/imported/LowPolly Target Range.obj-6cb4d5d6c186a6846a2afdcd14f54cd8.mesh<*>res://.godot/imported/LowPolly Target Range.obj-6cb4d5d6c186a6846a2afdcd14f54cd8.mesh::
+::res://Models/bullet/::1743743809
+bullet.obj::Mesh/Mesh::1129357025317264169::1743743811::1743743811::1::::<><><>0<>0<>672fa0a991ca2ea1d50d3502bc5c187a<>res://.godot/imported/bullet.obj-5fea36ee1a0cd9e727acb46f13aaf819.mesh<*>res://.godot/imported/bullet.obj-5fea36ee1a0cd9e727acb46f13aaf819.mesh::
+::res://Models/low_poly_animated_and_textured_revolver/::1743743809
+license.txt::TextFile/TextFile::-1::1743743811::0::1::::<><><>0<>0<><>::
+scene.gltf::PackedScene/PackedScene::734708551255763227::1743743811::1743743811::1::::<><><>0<>0<>ca260eb18dcc41d146b59315a7bd2790<>res://.godot/imported/scene.gltf-ca0b61f44d80ec8842c642184344eeea.scn::uid://bs7e6ggsmdtai::::res://Models/low_poly_animated_and_textured_revolver/textures/GunMaterial_baseColor.png
+::res://Models/low_poly_animated_and_textured_revolver/textures/::1743743810
+GunMaterial_baseColor.png::CompressedTexture2D/CompressedTexture2D::3716178510132655340::1743743812::1743743812::1::::<><><>0<>0<>025653f5681335f6a0ef9ce92699b935<>res://.godot/imported/GunMaterial_baseColor.png-c995e9c65ee6521e97545b04ac6febbd.s3tc.ctex::
+::res://Models/textures/::1743743811
+Material_baseColor.png::CompressedTexture2D/CompressedTexture2D::907656037496988692::1743743812::1743743812::1::::<><><>0<>0<>e164a82e2e105e5de98274929e9a0a1f<>res://.godot/imported/Material_baseColor.png-0981fd3273c39431ebdbeb54695e76de.s3tc.ctex::
+pistol_baseColor.png::CompressedTexture2D/CompressedTexture2D::3894499483537448315::1743743813::1743743813::1::::<><><>0<>0<>4cf9e6e83b7a7c1aa8e48632a92e8ac8<>res://.godot/imported/pistol_baseColor.png-3265fdc13a50f3eace8cfb1920aa7b55.s3tc.ctex::
+PM3D_Cylinder3D_9_baseColor.png::CompressedTexture2D/CompressedTexture2D::2544421263487459857::1743743813::1743743813::1::::<><><>0<>0<>b5306ef62d442483dbf38d48c4520ff6<>res://.godot/imported/PM3D_Cylinder3D_9_baseColor.png-4497dbc7c1cd64f7c1d01af9976e8e70.s3tc.ctex::
+PM3D_Cylinder3D_11_baseColor.png::CompressedTexture2D/CompressedTexture2D::2323302006146636181::1743743812::1743743812::1::::<><><>0<>0<>9991837f7458a85cd0b3bc03bca8248d<>res://.godot/imported/PM3D_Cylinder3D_11_baseColor.png-c25f6e87b781b1ba2672337c9a79d395.s3tc.ctex::
+UMesh_PM3D_Cylinder3D_5_baseColor.png::CompressedTexture2D/CompressedTexture2D::2212531774456537661::1743743813::1743743813::1::::<><><>0<>0<>1054f1da62c7f8337567decd845f93b9<>res://.godot/imported/UMesh_PM3D_Cylinder3D_5_baseColor.png-0918c066fb5285dea67bb523a960853d.s3tc.ctex::
+::res://Sounds/::1743777358
+gunshot.wav::AudioStreamWAV/AudioStreamWAV::81804745909218011::1743743814::1743743814::1::::<><><>0<>0<>e981581bc9c19cd037074e8734a552d2<>res://.godot/imported/gunshot.wav-89ab16bce8b8bfb24d3d7f504544ddb4.sample::
+revolver click.wav::AudioStreamWAV::5195854604846261269::1743777360::1743777391::1::::<><><>0<>0<>9a0bd65001cb6e7e9daf1fa7b336010d<>res://.godot/imported/revolver click.wav-4693dafacbf67f61d88719a3b1aa220a.sample::
+revolverhammer.wav::AudioStreamWAV/AudioStreamWAV::4874213807681756959::1743743814::1743743814::1::::<><><>0<>0<>64914c29e1d05a8740f1ff37c2845d21<>res://.godot/imported/revolverhammer.wav-2baf30cba27ac8ef3f363346f2d73387.sample::

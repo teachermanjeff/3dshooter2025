@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://dknihd8d8aqo4"]
+[gd_scene load_steps=7 format=3 uid="uid://dknihd8d8aqo4"]
 
 [ext_resource type="PackedScene" uid="uid://kp5spekfthct" path="res://Models/low_poly_animated_and_textured_revolver/scene.gltf" id="1_jpqjm"]
 [ext_resource type="Script" uid="uid://bo6ouv343b26l" path="res://gun.gd" id="2_fry05"]
 [ext_resource type="PackedScene" uid="uid://c6r2j10pawscx" path="res://bullet.tscn" id="3_7c1qe"]
 [ext_resource type="AudioStream" uid="uid://bfvku6h40psd" path="res://Sounds/gunshot.wav" id="4_1psom"]
 [ext_resource type="AudioStream" uid="uid://cbpdubhdmxbad" path="res://Sounds/revolverhammer.wav" id="5_i8pi3"]
+[ext_resource type="AudioStream" uid="uid://cga5737h3w8u0" path="res://Sounds/revolver click.wav" id="6_5rcv4"]
 
 [node name="gun" instance=ExtResource("1_jpqjm")]
 transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, 0, 0, 0)
@@ -34,3 +35,6 @@ stream = ExtResource("4_1psom")
 
 [node name="ReloadClick" type="AudioStreamPlayer3D" parent="." index="5"]
 stream = ExtResource("5_i8pi3")
+
+[node name="DryFireClick" type="AudioStreamPlayer3D" parent="." index="6"]
+stream = ExtResource("6_5rcv4")
