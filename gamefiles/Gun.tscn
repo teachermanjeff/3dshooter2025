@@ -1,12 +1,15 @@
-[gd_scene load_steps=4 format=3 uid="uid://dknihd8d8aqo4"]
+[gd_scene load_steps=6 format=3 uid="uid://dknihd8d8aqo4"]
 
 [ext_resource type="PackedScene" uid="uid://kp5spekfthct" path="res://Models/low_poly_animated_and_textured_revolver/scene.gltf" id="1_jpqjm"]
 [ext_resource type="Script" uid="uid://bo6ouv343b26l" path="res://gun.gd" id="2_fry05"]
 [ext_resource type="PackedScene" uid="uid://c6r2j10pawscx" path="res://bullet.tscn" id="3_7c1qe"]
+[ext_resource type="AudioStream" uid="uid://bfvku6h40psd" path="res://Sounds/gunshot.wav" id="4_1psom"]
+[ext_resource type="AudioStream" uid="uid://cbpdubhdmxbad" path="res://Sounds/revolverhammer.wav" id="5_i8pi3"]
 
 [node name="gun" instance=ExtResource("1_jpqjm")]
 transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, 0, 0, 0)
 script = ExtResource("2_fry05")
+bullet_scene = ExtResource("3_7c1qe")
 
 [node name="Skeleton3D" parent="Sketchfab_model/d0d5d4f9f2ea426abac37ad805e4834f_fbx/Object_2/RootNode/Armature/Object_6" index="0"]
 bones/1/rotation = Quaternion(0.875557, -1.15184e-07, -2.08749e-07, 0.483115)
@@ -15,10 +18,19 @@ bones/4/rotation = Quaternion(-0.277498, 2.29055e-07, 6.61606e-08, 0.960726)
 bones/6/rotation = Quaternion(-0.277498, 2.29055e-07, 6.61606e-08, 0.960726)
 
 [node name="AnimationPlayer" parent="." index="1"]
-speed_scale = 2.156
+speed_scale = 4.0
 
 [node name="BulletSpawn" type="Marker3D" parent="." index="2"]
-transform = Transform3D(10000, 8.63726e-12, -2.27119e-10, 8.63724e-12, -10000, -0.00093325, -2.27119e-10, 0.00093325, -10000, 9.54688e-18, 177.341, 350.369)
+transform = Transform3D(10000, 8.63726e-12, -2.27119e-10, 8.63724e-12, -10000, -0.00093325, -2.27119e-10, 0.00093325, -10000, 9.54688e-18, 177.341, -0.05)
 
 [node name="Bullet" parent="BulletSpawn" index="0" instance=ExtResource("3_7c1qe")]
-transform = Transform3D(6e-05, 9.05975e-12, -9.05975e-12, 9.05975e-12, -6e-05, 5.5995e-12, -9.05975e-12, -5.5995e-12, -6e-05, -1.11327e-16, -0.00026142, -0.00491162)
+transform = Transform3D(1, 1.50996e-07, -1.50996e-07, 1.50996e-07, -1, 9.3325e-08, -1.50996e-07, -9.3325e-08, -1, -1.11789e-16, -0.00026142, -0.05)
+
+[node name="Gunshot" type="AudioStreamPlayer3D" parent="." index="3"]
+transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0, 0)
+stream = ExtResource("4_1psom")
+
+[node name="ReloadAnimation" type="AnimationPlayer" parent="." index="4"]
+
+[node name="ReloadClick" type="AudioStreamPlayer3D" parent="." index="5"]
+stream = ExtResource("5_i8pi3")
