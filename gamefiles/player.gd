@@ -3,7 +3,7 @@ extends CharacterBody3D  # Ensure this is on a CharacterBody3D
 @export var speed: float = 5.0
 @export var jump_velocity: float = 5.0
 @export var mouse_sensitivity: float = 0.002  # Adjust sensitivity
-var gravity = ProjectSettings.get("physics/3d/default_gravity")
+var gravity = 16
 
 @onready var head = $Head  # Reference to a pivot node
 @onready var camera = $Head/Camera3D  # Camera inside the head
