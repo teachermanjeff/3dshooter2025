@@ -34,13 +34,13 @@ func shoot():
 		$AnimationPlayer.play("Shooting animation")
 		$AnimationPlayer.speed_scale = 4.0 
 		await get_tree().create_timer(shoot_delay).timeout
-		if bullet_scene:
-			var bullet = bullet_scene.instantiate()
-			get_parent().add_child(bullet)  
-			bullet.global_transform = $BulletSpawn.global_transform  # Correct direction
-			await get_tree().create_timer(fire_rate).timeout
-			$Gunshot.play()
-			current_ammo -= 1
+		#if bullet_scene:
+		var bullet = bullet_scene.instantiate()
+		get_parent().add_child(bullet)  
+		bullet.global_transform = $BulletSpawn.global_transform  # Correct direction
+		await get_tree().create_timer(fire_rate).timeout
+		$Gunshot.play()
+		current_ammo -= 1
 		can_shoot = true
 	#if can_shoot == false:  THIS MAKES IT CLICK TWICE BECAUSE OF THE PREVENTING IMMEDIATE REFIREING
 	#	$DryFireClick.play()
@@ -54,4 +54,4 @@ func _process(delta):
 		can_shoot = true
 	if current_ammo <= 0:
 		can_shoot = false
-	#print(current_ammo)
+	#wprint(current_ammo)
