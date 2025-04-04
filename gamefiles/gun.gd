@@ -42,6 +42,7 @@ func shoot():
 		$Gunshot.play()
 		current_ammo -= 1
 		can_shoot = true
+		
 	#if can_shoot == false:  THIS MAKES IT CLICK TWICE BECAUSE OF THE PREVENTING IMMEDIATE REFIREING
 	#	$DryFireClick.play()
 		
