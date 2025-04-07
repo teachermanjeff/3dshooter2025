@@ -5,6 +5,7 @@ extends Node3D
 @export var fire_rate: float = 0.27  # Time between shots (adjust as needed)
 @export var shoot_delay: float = 0.35  # Delay before firing bullet
 @export var reload_time: float = 8.0
+#@onready var muzzle_flash = $gun/MuzzleFlash
 
 var can_shoot = true  # Prevents spamming
 var is_reloading: bool = false
@@ -27,25 +28,27 @@ func reload():
 	is_reloading = false
 
 func shoot():
-	await get_tree().create_timer(0.2)
-	$DryFireClick.play()
-	if can_shoot == true: 
-		can_shoot = false  # Prevents immediate re-firing       
-		$AnimationPlayer.play("Shooting animation")
-		$AnimationPlayer.speed_scale = 4.0 
-		await get_tree().create_timer(shoot_delay).timeout
-		#if bullet_scene:
-		var bullet = bullet_scene.instantiate()
-		get_parent().add_child(bullet)  
-		bullet.global_transform = $BulletSpawn.global_transform  # Correct direction
-		await get_tree().create_timer(fire_rate).timeout
-		$Gunshot.play()
-		current_ammo -= 1
-		can_shoot = true
-		
-	#if can_shoot == false:  THIS MAKES IT CLICK TWICE BECAUSE OF THE PREVENTING IMMEDIATE REFIREING
-	#	$DryFireClick.play()
-		
+	if !$AnimationPlayer.is_playing():
+		await get_tree().create_timer(0.2)
+		$DryFireClick.play()
+		if can_shoot == true: 
+			can_shoot = false  # Prevents immediate re-firing       
+			$AnimationPlayer.play("Shooting animation")
+			$AnimationPlayer.speed_scale = 4.0 
+			await get_tree().create_timer(shoot_delay).timeout
+			#if bullet_scene:
+			var bullet = bullet_scene.instantiate()
+			get_parent().add_child(bullet)  
+			bullet.global_transform = $BulletSpawn.global_transform  # Correct direction
+			await get_tree().create_timer(fire_rate).timeout
+			$Gunshot.play()
+		#	muzzle_flash.restart()
+			current_ammo -= 1
+			can_shoot = true
+			
+		#if can_shoot == false:  THIS MAKES IT CLICK TWICE BECAUSE OF THE PREVENTING IMMEDIATE REFIREING
+		#	$DryFireClick.play()
+			
 func _process(delta):
 	if Input.is_action_just_pressed("reload") and not is_reloading:
 		reload()

@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://dknihd8d8aqo4"]
+[gd_scene load_steps=8 format=3 uid="uid://dknihd8d8aqo4"]
 
 [ext_resource type="PackedScene" uid="uid://kp5spekfthct" path="res://Models/low_poly_animated_and_textured_revolver/scene.gltf" id="1_jpqjm"]
 [ext_resource type="Script" uid="uid://bo6ouv343b26l" path="res://gun.gd" id="2_fry05"]
@@ -6,6 +6,8 @@
 [ext_resource type="AudioStream" uid="uid://bfvku6h40psd" path="res://Sounds/gunshot.wav" id="4_1psom"]
 [ext_resource type="AudioStream" uid="uid://cbpdubhdmxbad" path="res://Sounds/revolverhammer.wav" id="5_i8pi3"]
 [ext_resource type="AudioStream" uid="uid://cga5737h3w8u0" path="res://Sounds/revolver click.wav" id="6_5rcv4"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5rcv4"]
 
 [node name="gun" instance=ExtResource("1_jpqjm")]
 transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, 0, 0, 0)
@@ -38,3 +40,11 @@ stream = ExtResource("5_i8pi3")
 
 [node name="DryFireClick" type="AudioStreamPlayer3D" parent="." index="6"]
 stream = ExtResource("6_5rcv4")
+
+[node name="MuzzleFlash" type="GPUParticles3D" parent="." index="7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 141.657, 411.133)
+emitting = false
+amount = 3
+lifetime = 0.1
+one_shot = true
+process_material = SubResource("ShaderMaterial_5rcv4")
