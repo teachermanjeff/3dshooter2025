@@ -1,6 +1,6 @@
 extends RigidBody3D
 
-@export var speed: float = 10.0  
+@export var speed: float = 200.0  
 
 func _ready():
 	linear_velocity = -global_transform.basis.z * speed  
