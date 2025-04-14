@@ -14,46 +14,42 @@ var current_ammo = Max_ammo
 func _input(event):
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT and current_ammo >= 1:
 		shoot()
+		
+func wait(amount):
+	await get_tree().create_timer(amount).timeout
 	
 func reload():
 	is_reloading = true
 	$AnimationPlayer.play("Reload Animation")
 	$AnimationPlayer.speed_scale = 1.0 
 	$ReloadClick.play()
-	await get_tree().create_timer(1.5).timeout
+	wait(1.5)
 	$ReloadClick.play()
 	current_ammo = Max_ammo
-	await get_tree().create_timer(reload_time)
+	wait(reload_time)
 	is_reloading = false
 
 func shoot():
-	if !$AnimationPlayer.is_playing():
-		await get_tree().create_timer(0.2)
-		$DryFireClick.play()
-		if can_shoot == true: 
-			can_shoot = false  # Prevents immediate re-firing       
-			$AnimationPlayer.play("Shooting animation")
-			$AnimationPlayer.speed_scale = 4.0 
-			await get_tree().create_timer(shoot_delay).timeout
-			#if bullet_scene:
-			var bullet = bullet_scene.instantiate()
-			get_parent().add_child(bullet)  
-			bullet.global_transform = $BulletSpawn.global_transform  # Correct direction
-			await get_tree().create_timer(fire_rate).timeout
-			$Gunshot.play()
-			current_ammo -= 1
-			can_shoot = true
-			
-		#if can_shoot == false:  THIS MAKES IT CLICK TWICE BECAUSE OF THE PREVENTING IMMEDIATE REFIREING
-		#	$DryFireClick.play()
+	if not can_shoot:
+		return 
+
+	can_shoot = false
+	current_ammo -= 1
+	await get_tree().create_timer(0.2)
+	$DryFireClick.play()
+	$AnimationPlayer.play("Shooting animation")
+	$AnimationPlayer.speed_scale = 4.0 
+	await get_tree().create_timer(shoot_delay).timeout
+	var bullet = bullet_scene.instantiate()
+	get_parent().add_child(bullet)  
+	bullet.global_transform = $BulletSpawn.global_transform
+	await get_tree().create_timer(fire_rate).timeout
+	$Gunshot.play()
+	can_shoot = true
 		
 func _process(delta):
 	if Input.is_action_just_pressed("reload") and not is_reloading:
 		reload()
 	if Input.is_action_just_pressed("shoot") and not is_reloading:
 		shoot()
-	if current_ammo > 0:
-		can_shoot = true
-	if current_ammo <= 0:
-		can_shoot = false
-	#wprint(current_ammo)
+	can_shoot = true if current_ammo > 0 else false

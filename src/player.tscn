@@ -1,13 +1,15 @@
-[gd_scene load_steps=4 format=3 uid="uid://clk1lky1xhkhg"]
+[gd_scene load_steps=5 format=3 uid="uid://clk1lky1xhkhg"]
 
 [ext_resource type="Script" uid="uid://dq7ogpkf8asip" path="res://player.gd" id="1_4flbx"]
 [ext_resource type="PackedScene" uid="uid://dknihd8d8aqo4" path="res://Gun.tscn" id="2_onrkg"]
+[ext_resource type="PackedScene" uid="uid://dmr0fcamx7t56" path="res://addons/virtual_joystick/virtual_joystick_scene.tscn" id="3_i3pqv"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_sh265"]
 
-[node name="player" type="CharacterBody3D"]
+[node name="player" type="CharacterBody3D" node_paths=PackedStringArray("joystick")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0543243, 0)
 script = ExtResource("1_4flbx")
+joystick = NodePath("Virtual Joystick")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("CapsuleShape3D_sh265")
@@ -19,3 +21,5 @@ transform = Transform3D(-0.002, 3.0571e-17, -1.74846e-10, 0, 0.002, 3.49691e-10,
 
 [node name="Camera3D" type="Camera3D" parent="Head"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.503719, 0)
+
+[node name="Virtual Joystick" parent="." instance=ExtResource("3_i3pqv")]
