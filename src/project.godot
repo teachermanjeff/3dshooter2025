@@ -15,6 +15,14 @@ run/main_scene="uid://b50a2s7mv2ddx"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+ECS="*res://addons/gecs/ecs.gd"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/gecs/plugin.cfg")
+
 [input]
 
 jump={
