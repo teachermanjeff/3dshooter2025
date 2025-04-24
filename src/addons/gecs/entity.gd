@@ -97,6 +97,7 @@ func initialize():
 ## [b]Example[/b]:
 ## [codeblock]entity.add_component(HealthComponent)[/codeblock]
 func add_component(component: Variant) -> void:
+	print(component, component.get_script())
 	components[component.get_script().resource_path] = component
 	component_added.emit(self, component)
 	_entityLogger.trace('Added Component: ', component.get_script().resource_path)

@@ -1,5 +1,6 @@
-[gd_scene load_steps=12 format=3 uid="uid://b50a2s7mv2ddx"]
+[gd_scene load_steps=13 format=3 uid="uid://b50a2s7mv2ddx"]
 
+[ext_resource type="Script" uid="uid://cgg041qylqvwf" path="res://main.gd" id="1_8203o"]
 [ext_resource type="ArrayMesh" uid="uid://cm40655jmqf2j" path="res://Models/LowPolly Target Range.obj" id="2_w20w6"]
 [ext_resource type="PackedScene" uid="uid://clk1lky1xhkhg" path="res://player.tscn" id="2_yrbm6"]
 [ext_resource type="PackedScene" uid="uid://cs374gdt0uw21" path="res://Models/targets/scene.gltf" id="3_yrbm6"]
@@ -39,6 +40,7 @@ fog_sky_affect = 0.063
 fog_height_density = -0.13
 
 [node name="3D scene" type="Node3D"]
+script = ExtResource("1_8203o")
 
 [node name="LowPollyTargetRange" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.29621, 0.791488, 1.66878)
