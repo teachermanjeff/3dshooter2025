@@ -1,4 +1,4 @@
 class_name Model
 extends Component
 
-@export var model: NodePath = "../Models/bullet/bullet.obj"
+@export_node_path("RigidBody3D") var model: NodePath = "../Models/bullet/bullet.obj"
