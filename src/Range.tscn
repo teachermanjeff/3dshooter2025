@@ -7,9 +7,8 @@
 [sub_resource type="Skin" id="Skin_yrbm6"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8203o"]
-albedo_color = Color(0.537011, 0.537011, 0.537011, 1)
+albedo_color = Color(1, 0.45098, 0, 1)
 albedo_texture_force_srgb = true
-metallic = 1.0
 metallic_specular = 0.61
 clearcoat_enabled = true
 
@@ -41,7 +40,7 @@ fog_height_density = -0.13
 [node name="3D scene" type="Node3D"]
 
 [node name="LowPollyTargetRange" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.29621, 0.791488, 1.66878)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.29621, 0.791488, 1.92797)
 mesh = ExtResource("2_w20w6")
 skin = SubResource("Skin_yrbm6")
 surface_material_override/0 = SubResource("StandardMaterial3D_8203o")
@@ -77,6 +76,176 @@ shape = SubResource("BoxShape3D_w20w6")
 [node name="CollisionShape3D4" type="CollisionShape3D" parent="LowPollyTargetRange/Sides"]
 shape = SubResource("ConcavePolygonShape3D_w20w6")
 
+[node name="LowPollyTargetRange" type="MeshInstance3D" parent="LowPollyTargetRange"]
+transform = Transform3D(-4.37114e-08, 1, 0, 1, 4.37114e-08, 8.74228e-08, 8.74228e-08, 3.82137e-15, -1, -10.4294, -6.74294, -0.362835)
+mesh = ExtResource("2_w20w6")
+skin = SubResource("Skin_yrbm6")
+surface_material_override/0 = SubResource("StandardMaterial3D_8203o")
+
+[node name="Base" type="StaticBody3D" parent="LowPollyTargetRange/LowPollyTargetRange"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0259, 0, 10.2075)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LowPollyTargetRange/LowPollyTargetRange/Base"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.4754, -0.250488, -10.9505)
+shape = SubResource("BoxShape3D_daoqu")
+
+[node name="Celling" type="StaticBody3D" parent="LowPollyTargetRange/LowPollyTargetRange"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0259, 5.47379, 10.2075)
+
+[node name="Sides" type="StaticBody3D" parent="LowPollyTargetRange/LowPollyTargetRange"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LowPollyTargetRange/LowPollyTargetRange/Sides"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.22085, -8.44826)
+shape = SubResource("BoxShape3D_w20w6")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="LowPollyTargetRange/LowPollyTargetRange/Sides"]
+transform = Transform3D(-0.00504401, 0, -0.999987, 0, 1, 0, 0.999987, 0, -0.00504401, -6.56562, 2.22085, 0.634534)
+shape = SubResource("BoxShape3D_w20w6")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="LowPollyTargetRange/LowPollyTargetRange/Sides"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.20682, 1.70319, 8.54974)
+shape = SubResource("BoxShape3D_w20w6")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="LowPollyTargetRange/LowPollyTargetRange/Sides"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0739517, 0)
+shape = SubResource("ConcavePolygonShape3D_w20w6")
+
+[node name="LowPollyTargetRange2" type="MeshInstance3D" parent="LowPollyTargetRange"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -4.37114e-08, 1.9196, -6.74294, -12.2103)
+mesh = ExtResource("2_w20w6")
+skin = SubResource("Skin_yrbm6")
+surface_material_override/0 = SubResource("StandardMaterial3D_8203o")
+
+[node name="Base" type="StaticBody3D" parent="LowPollyTargetRange/LowPollyTargetRange2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0259, 0, 10.2075)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LowPollyTargetRange/LowPollyTargetRange2/Base"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.4754, -0.250488, -10.9505)
+shape = SubResource("BoxShape3D_daoqu")
+
+[node name="Celling" type="StaticBody3D" parent="LowPollyTargetRange/LowPollyTargetRange2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0259, 5.47379, 10.2075)
+
+[node name="Sides" type="StaticBody3D" parent="LowPollyTargetRange/LowPollyTargetRange2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LowPollyTargetRange/LowPollyTargetRange2/Sides"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.22085, -8.44826)
+shape = SubResource("BoxShape3D_w20w6")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="LowPollyTargetRange/LowPollyTargetRange2/Sides"]
+transform = Transform3D(-0.00504401, 0, -0.999987, 0, 1, 0, 0.999987, 0, -0.00504401, -6.56562, 2.22085, 0.634534)
+shape = SubResource("BoxShape3D_w20w6")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="LowPollyTargetRange/LowPollyTargetRange2/Sides"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.20682, 1.70319, 8.54974)
+shape = SubResource("BoxShape3D_w20w6")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="LowPollyTargetRange/LowPollyTargetRange2/Sides"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0739517, 0)
+shape = SubResource("ConcavePolygonShape3D_w20w6")
+
+[node name="LowPollyTargetRange3" type="MeshInstance3D" parent="LowPollyTargetRange"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -4.37114e-08, 16.05, -6.74294, -12.2103)
+mesh = ExtResource("2_w20w6")
+skin = SubResource("Skin_yrbm6")
+surface_material_override/0 = SubResource("StandardMaterial3D_8203o")
+
+[node name="Base" type="StaticBody3D" parent="LowPollyTargetRange/LowPollyTargetRange3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0259, 0, 10.2075)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LowPollyTargetRange/LowPollyTargetRange3/Base"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.4754, -0.250488, -10.9505)
+shape = SubResource("BoxShape3D_daoqu")
+
+[node name="Celling" type="StaticBody3D" parent="LowPollyTargetRange/LowPollyTargetRange3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0259, 5.47379, 10.2075)
+
+[node name="Sides" type="StaticBody3D" parent="LowPollyTargetRange/LowPollyTargetRange3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LowPollyTargetRange/LowPollyTargetRange3/Sides"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.22085, -8.44826)
+shape = SubResource("BoxShape3D_w20w6")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="LowPollyTargetRange/LowPollyTargetRange3/Sides"]
+transform = Transform3D(-0.00504401, 0, -0.999987, 0, 1, 0, 0.999987, 0, -0.00504401, -6.56562, 2.22085, 0.634534)
+shape = SubResource("BoxShape3D_w20w6")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="LowPollyTargetRange/LowPollyTargetRange3/Sides"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.20682, 1.70319, 8.54974)
+shape = SubResource("BoxShape3D_w20w6")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="LowPollyTargetRange/LowPollyTargetRange3/Sides"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0739517, 0)
+shape = SubResource("ConcavePolygonShape3D_w20w6")
+
+[node name="LowPollyTargetRange4" type="MeshInstance3D" parent="LowPollyTargetRange"]
+transform = Transform3D(1.42203e-16, -1.19249e-08, -1, 1, 1.19249e-08, 0, 1.19249e-08, -1, 1.19249e-08, 1.82971, -6.74294, 12.0423)
+mesh = ExtResource("2_w20w6")
+skin = SubResource("Skin_yrbm6")
+surface_material_override/0 = SubResource("StandardMaterial3D_8203o")
+
+[node name="Base" type="StaticBody3D" parent="LowPollyTargetRange/LowPollyTargetRange4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0259, 0, 10.2075)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LowPollyTargetRange/LowPollyTargetRange4/Base"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.4754, -0.250488, -10.9505)
+shape = SubResource("BoxShape3D_daoqu")
+
+[node name="Celling" type="StaticBody3D" parent="LowPollyTargetRange/LowPollyTargetRange4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0259, 5.47379, 10.2075)
+
+[node name="Sides" type="StaticBody3D" parent="LowPollyTargetRange/LowPollyTargetRange4"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LowPollyTargetRange/LowPollyTargetRange4/Sides"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.22085, -8.44826)
+shape = SubResource("BoxShape3D_w20w6")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="LowPollyTargetRange/LowPollyTargetRange4/Sides"]
+transform = Transform3D(-0.00504401, 0, -0.999987, 0, 1, 0, 0.999987, 0, -0.00504401, -6.56562, 2.22085, 0.634534)
+shape = SubResource("BoxShape3D_w20w6")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="LowPollyTargetRange/LowPollyTargetRange4/Sides"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.20682, 1.70319, 8.54974)
+shape = SubResource("BoxShape3D_w20w6")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="LowPollyTargetRange/LowPollyTargetRange4/Sides"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0739517, 0)
+shape = SubResource("ConcavePolygonShape3D_w20w6")
+
+[node name="LowPollyTargetRange5" type="MeshInstance3D" parent="LowPollyTargetRange"]
+transform = Transform3D(1.42203e-16, -1.19249e-08, -1, 1, 1.19249e-08, 0, 1.19249e-08, -1, 1.19249e-08, 15.9601, -6.74294, 12.1565)
+mesh = ExtResource("2_w20w6")
+skin = SubResource("Skin_yrbm6")
+surface_material_override/0 = SubResource("StandardMaterial3D_8203o")
+
+[node name="Base" type="StaticBody3D" parent="LowPollyTargetRange/LowPollyTargetRange5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0259, 0, 10.2075)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LowPollyTargetRange/LowPollyTargetRange5/Base"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.4754, -0.250488, -10.9505)
+shape = SubResource("BoxShape3D_daoqu")
+
+[node name="Celling" type="StaticBody3D" parent="LowPollyTargetRange/LowPollyTargetRange5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0259, 5.47379, 10.2075)
+
+[node name="Sides" type="StaticBody3D" parent="LowPollyTargetRange/LowPollyTargetRange5"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LowPollyTargetRange/LowPollyTargetRange5/Sides"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.22085, -8.44826)
+shape = SubResource("BoxShape3D_w20w6")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="LowPollyTargetRange/LowPollyTargetRange5/Sides"]
+transform = Transform3D(-0.00504401, 0, -0.999987, 0, 1, 0, 0.999987, 0, -0.00504401, -6.56562, 2.22085, 0.634534)
+shape = SubResource("BoxShape3D_w20w6")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="LowPollyTargetRange/LowPollyTargetRange5/Sides"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.20682, 1.70319, 8.54974)
+shape = SubResource("BoxShape3D_w20w6")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="LowPollyTargetRange/LowPollyTargetRange5/Sides"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0739517, 0)
+shape = SubResource("ConcavePolygonShape3D_w20w6")
+
 [node name="player" parent="." instance=ExtResource("2_yrbm6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.14468, 0)
 
@@ -84,7 +253,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.14468, 0)
 environment = SubResource("Environment_8203o")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldEnvironment"]
-transform = Transform3D(0.460516, 0.489472, -0.740501, -0.304813, 0.870699, 0.38597, 0.833675, 0.0479697, 0.550168, -94.4337, 20.2746, 48.0617)
+transform = Transform3D(0.460516, 0.489472, -0.740502, -0.304813, 0.870699, 0.38597, 0.833675, 0.0479693, 0.550168, -38.0857, 20.2746, 48.0617)
 light_energy = 1.162
 light_volumetric_fog_energy = 0.0
 shadow_enabled = true
