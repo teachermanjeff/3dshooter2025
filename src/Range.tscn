@@ -174,7 +174,7 @@ shape = SubResource("BoxShape3D_w20w6")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.20682, 1.70319, 8.54974)
 shape = SubResource("BoxShape3D_w20w6")
 
-[node name="CollisionShape3D4" type="CollisionShape3D" parent="LowPollyTargetRange/LowPollyTargetRange3/Sides"]
+[node name="CollisionShape3D43" type="CollisionShape3D" parent="LowPollyTargetRange/LowPollyTargetRange3/Sides"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0739517, 0)
 shape = SubResource("ConcavePolygonShape3D_w20w6")
 
