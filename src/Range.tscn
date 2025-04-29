@@ -170,7 +170,7 @@ shape = SubResource("BoxShape3D_w20w6")
 transform = Transform3D(-0.00504401, 0, -0.999987, 0, 1, 0, 0.999987, 0, -0.00504401, -6.56562, 2.22085, 0.634534)
 shape = SubResource("BoxShape3D_w20w6")
 
-[node name="CollisionShape3D3" type="CollisionShape3D" parent="LowPollyTargetRange/LowPollyTargetRange3/Sides"]
+[node name="CollisionShape3D3s" type="CollisionShape3D" parent="LowPollyTargetRange/LowPollyTargetRange3/Sides"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.20682, 1.70319, 8.54974)
 shape = SubResource("BoxShape3D_w20w6")
 
