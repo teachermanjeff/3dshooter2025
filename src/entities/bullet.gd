@@ -1,0 +1,2 @@
+class_name bullet_entity
+extends Entity
