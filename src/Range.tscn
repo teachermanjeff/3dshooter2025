@@ -1,10 +1,11 @@
-[gd_scene load_steps=14 format=3 uid="uid://b50a2s7mv2ddx"]
+[gd_scene load_steps=15 format=3 uid="uid://b50a2s7mv2ddx"]
 
 [ext_resource type="ArrayMesh" uid="uid://cm40655jmqf2j" path="res://Models/LowPolly Target Range.obj" id="2_w20w6"]
 [ext_resource type="PackedScene" uid="uid://clk1lky1xhkhg" path="res://player.tscn" id="2_yrbm6"]
 [ext_resource type="PackedScene" uid="uid://cs374gdt0uw21" path="res://Models/targets/scene.gltf" id="3_yrbm6"]
 [ext_resource type="Script" uid="uid://b7wm4ndlq7go5" path="res://systems/targets_hit.gd" id="5_5yy7b"]
 [ext_resource type="PackedScene" uid="uid://ba5vovvfojqax" path="res://target.tscn" id="5_daoqu"]
+[ext_resource type="Texture2D" uid="uid://bypmw4oeitl1o" path="res://Graphics/crosshair.png" id="6_5yy7b"]
 
 [sub_resource type="Skin" id="Skin_yrbm6"]
 
@@ -287,21 +288,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.00468, 3.01151, 1.42761)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="Crosshair" type="TextEdit" parent="CanvasLayer"]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 11.0
-offset_top = -17.0
-offset_right = 33.0
-offset_bottom = 17.0
-grow_horizontal = 2
-grow_vertical = 2
-text = "X"
-editable = false
-
 [node name="targets_hit" type="Label" parent="CanvasLayer"]
 offset_left = 1025.0
 offset_top = -1.0
@@ -309,3 +295,8 @@ offset_right = 1152.0
 offset_bottom = 22.0
 text = "	🎯targets hit: 0"
 script = ExtResource("5_5yy7b")
+
+[node name="Crosshair" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(586, 325)
+scale = Vector2(0.162109, 0.162109)
+texture = ExtResource("6_5yy7b")
