@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://23x0ra2vsune" path="res://target.gd" id="2_e1yvt"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_e1yvt"]
-height = 0.119904
+height = 0.85454
 radius = 0.63623
 
 [node name="Sketchfab_Scene" instance=ExtResource("1_t2jmu")]
@@ -13,7 +13,7 @@ radius = 0.63623
 script = ExtResource("2_e1yvt")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/Collada visual scene group/pCube3/Area3D" index="0"]
-transform = Transform3D(-0.0117982, 0.99993, -4.37083e-08, -0.99993, -0.0117982, 4.42271e-08, 4.37083e-08, 4.42271e-08, 1, 0.0121175, -0.416985, 0.0157783)
+transform = Transform3D(-0.0117982, 0.99993, -4.37083e-08, -0.99993, -0.0117982, 4.42271e-08, 4.37083e-08, 4.42271e-08, 1, -0.0613969, -0.416252, 0.0157783)
 shape = SubResource("CylinderShape3D_e1yvt")
 
 [connection signal="body_entered" from="Sketchfab_model/Collada visual scene group/pCube3/Area3D" to="Sketchfab_model/Collada visual scene group/pCube3/Area3D" method="_on_body_entered"]
