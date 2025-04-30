@@ -1,8 +1,7 @@
-[gd_scene load_steps=15 format=3 uid="uid://b50a2s7mv2ddx"]
+[gd_scene load_steps=14 format=3 uid="uid://b50a2s7mv2ddx"]
 
 [ext_resource type="ArrayMesh" uid="uid://cm40655jmqf2j" path="res://Models/LowPolly Target Range.obj" id="2_w20w6"]
 [ext_resource type="PackedScene" uid="uid://clk1lky1xhkhg" path="res://player.tscn" id="2_yrbm6"]
-[ext_resource type="PackedScene" uid="uid://cs374gdt0uw21" path="res://Models/targets/scene.gltf" id="3_yrbm6"]
 [ext_resource type="Script" uid="uid://b7wm4ndlq7go5" path="res://systems/targets_hit.gd" id="5_5yy7b"]
 [ext_resource type="PackedScene" uid="uid://ba5vovvfojqax" path="res://target.tscn" id="5_daoqu"]
 [ext_resource type="Texture2D" uid="uid://bypmw4oeitl1o" path="res://Graphics/crosshair.png" id="6_5yy7b"]
@@ -262,24 +261,6 @@ light_volumetric_fog_energy = 0.0
 shadow_enabled = true
 shadow_normal_bias = 0.0
 shadow_opacity = 0.75
-
-[node name="Sketchfab_Scene" parent="." instance=ExtResource("3_yrbm6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6932, 3.74693, 1.93288)
-
-[node name="Sketchfab_Scene2" parent="." instance=ExtResource("3_yrbm6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6932, 3.74693, 0.266906)
-
-[node name="Sketchfab_Scene3" parent="." instance=ExtResource("3_yrbm6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6932, 3.74693, -1.27283)
-
-[node name="Sketchfab_Scene4" parent="." instance=ExtResource("3_yrbm6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6932, 3.74693, 3.60387)
-
-[node name="Sketchfab_Scene5" parent="." instance=ExtResource("3_yrbm6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6932, 3.74693, 5.24838)
-
-[node name="Sketchfab_Scene6" parent="." instance=ExtResource("3_yrbm6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6932, 3.74693, 6.94595)
 
 [node name="Targets" type="Node" parent="."]
 
