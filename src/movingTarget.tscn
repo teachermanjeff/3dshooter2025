@@ -9,7 +9,7 @@
 height = 0.85454
 radius = 0.63623
 
-[node name="Sketchfab_Scene" instance=ExtResource("1_ujjog")]
+[node name="movingtarget" instance=ExtResource("1_ujjog")]
 script = ExtResource("2_53f1a")
 
 [node name="Area3D" type="Area3D" parent="Sketchfab_model/Collada visual scene group/pCube3" index="1"]

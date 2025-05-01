@@ -2,6 +2,8 @@ extends Node3D
 
 var speed = 5.0
 var direction = Vector3.BACK
+var distance = 100
+var end_distance = global_position
 
 func _physics_process(delta):
 	translate(direction * speed * delta)

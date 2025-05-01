@@ -311,4 +311,4 @@ scale = Vector2(0.162109, 0.162109)
 texture = ExtResource("6_5yy7b")
 
 [node name="Sketchfab_Scene" parent="." instance=ExtResource("6_sudg6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0104, 4.0871, -4.53528)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.9203, 4.41543, -4.53528)
