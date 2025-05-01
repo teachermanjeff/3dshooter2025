@@ -1,10 +1,11 @@
-[gd_scene load_steps=14 format=3 uid="uid://b50a2s7mv2ddx"]
+[gd_scene load_steps=15 format=3 uid="uid://b50a2s7mv2ddx"]
 
 [ext_resource type="ArrayMesh" uid="uid://cm40655jmqf2j" path="res://Models/LowPolly Target Range.obj" id="2_w20w6"]
 [ext_resource type="PackedScene" uid="uid://clk1lky1xhkhg" path="res://player.tscn" id="2_yrbm6"]
 [ext_resource type="Script" uid="uid://b7wm4ndlq7go5" path="res://systems/targets_hit.gd" id="5_5yy7b"]
 [ext_resource type="PackedScene" uid="uid://ba5vovvfojqax" path="res://target.tscn" id="5_daoqu"]
 [ext_resource type="Texture2D" uid="uid://bypmw4oeitl1o" path="res://Graphics/crosshair.png" id="6_5yy7b"]
+[ext_resource type="PackedScene" uid="uid://dfvi6qlk5rpq" path="res://movingTarget.tscn" id="6_sudg6"]
 
 [sub_resource type="Skin" id="Skin_yrbm6"]
 
@@ -308,3 +309,6 @@ script = ExtResource("5_5yy7b")
 position = Vector2(586, 325)
 scale = Vector2(0.162109, 0.162109)
 texture = ExtResource("6_5yy7b")
+
+[node name="Sketchfab_Scene" parent="." instance=ExtResource("6_sudg6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0104, 4.0871, -4.53528)

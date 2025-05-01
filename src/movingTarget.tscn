@@ -1,0 +1,26 @@
+[gd_scene load_steps=6 format=3 uid="uid://dfvi6qlk5rpq"]
+
+[ext_resource type="PackedScene" uid="uid://cs374gdt0uw21" path="res://Models/targets/scene.gltf" id="1_ujjog"]
+[ext_resource type="Script" uid="uid://23x0ra2vsune" path="res://target.gd" id="2_1n45f"]
+[ext_resource type="Script" uid="uid://dfukc31w65ijh" path="res://moving_target.gd" id="2_53f1a"]
+[ext_resource type="AudioStream" uid="uid://dvbwhhhg0x2ls" path="res://Sounds/Ding.wav" id="3_53f1a"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_e1yvt"]
+height = 0.85454
+radius = 0.63623
+
+[node name="Sketchfab_Scene" instance=ExtResource("1_ujjog")]
+script = ExtResource("2_53f1a")
+
+[node name="Area3D" type="Area3D" parent="Sketchfab_model/Collada visual scene group/pCube3" index="1"]
+script = ExtResource("2_1n45f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/Collada visual scene group/pCube3/Area3D" index="0"]
+transform = Transform3D(-0.0117982, 0.99993, -4.37083e-08, -0.99993, -0.0117982, 4.42271e-08, 4.37083e-08, 4.42271e-08, 1, -0.0613969, -0.416252, 0.0157783)
+shape = SubResource("CylinderShape3D_e1yvt")
+
+[node name="ding" type="AudioStreamPlayer3D" parent="Sketchfab_model/Collada visual scene group/pCube3/Area3D" index="1"]
+transform = Transform3D(-0.0147016, 1.246, -5.44646e-08, -1.246, -0.0147016, 5.51109e-08, 5.44645e-08, 5.5111e-08, 1.24609, -0.0613969, -0.416252, 0.0157783)
+stream = ExtResource("3_53f1a")
+
+[connection signal="body_entered" from="Sketchfab_model/Collada visual scene group/pCube3/Area3D" to="Sketchfab_model/Collada visual scene group/pCube3/Area3D" method="_on_body_entered"]
