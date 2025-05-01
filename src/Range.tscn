@@ -1,10 +1,11 @@
-[gd_scene load_steps=14 format=3 uid="uid://b50a2s7mv2ddx"]
+[gd_scene load_steps=15 format=3 uid="uid://b50a2s7mv2ddx"]
 
 [ext_resource type="ArrayMesh" uid="uid://cm40655jmqf2j" path="res://Models/LowPolly Target Range.obj" id="2_w20w6"]
 [ext_resource type="PackedScene" uid="uid://clk1lky1xhkhg" path="res://player.tscn" id="2_yrbm6"]
 [ext_resource type="Script" uid="uid://b7wm4ndlq7go5" path="res://systems/targets_hit.gd" id="5_5yy7b"]
 [ext_resource type="PackedScene" uid="uid://ba5vovvfojqax" path="res://target.tscn" id="5_daoqu"]
 [ext_resource type="Texture2D" uid="uid://bypmw4oeitl1o" path="res://Graphics/crosshair.png" id="6_5yy7b"]
+[ext_resource type="PackedScene" uid="uid://dfvi6qlk5rpq" path="res://movingTarget.tscn" id="6_sudg6"]
 
 [sub_resource type="Skin" id="Skin_yrbm6"]
 
@@ -265,7 +266,34 @@ shadow_opacity = 0.75
 [node name="Targets" type="Node" parent="."]
 
 [node name="Sketchfab_Scene" parent="Targets" instance=ExtResource("5_daoqu")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.00468, 3.01151, 1.42761)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.2828, 4.32815, 1.9406)
+
+[node name="Sketchfab_Scene2" parent="Targets" instance=ExtResource("5_daoqu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.2828, 4.32815, -1.13169)
+
+[node name="Sketchfab_Scene3" parent="Targets" instance=ExtResource("5_daoqu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.2828, 4.32815, -4.56127)
+
+[node name="Sketchfab_Scene4" parent="Targets" instance=ExtResource("5_daoqu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.2828, 4.32815, 8.25554)
+
+[node name="Sketchfab_Scene5" parent="Targets" instance=ExtResource("5_daoqu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.2828, 4.32815, 4.82596)
+
+[node name="Sketchfab_Scene6" parent="Targets" instance=ExtResource("5_daoqu")]
+transform = Transform3D(1, 0, 0, 0, -1, -8.74228e-08, 0, 8.74228e-08, -1, 13.2828, 1.47687, 1.90873)
+
+[node name="Sketchfab_Scene7" parent="Targets" instance=ExtResource("5_daoqu")]
+transform = Transform3D(1, 0, 0, 0, -1, -8.74228e-08, 0, 8.74228e-08, -1, 13.2828, 1.46882, 4.98101)
+
+[node name="Sketchfab_Scene8" parent="Targets" instance=ExtResource("5_daoqu")]
+transform = Transform3D(1, 0, 0, 0, -1, -8.74228e-08, 0, 8.74228e-08, -1, 13.2828, 1.45985, 8.41058)
+
+[node name="Sketchfab_Scene9" parent="Targets" instance=ExtResource("5_daoqu")]
+transform = Transform3D(1, 0, 0, 0, -1, -8.74228e-08, 0, 8.74228e-08, -1, 13.2828, 1.4934, -4.40619)
+
+[node name="Sketchfab_Scene10" parent="Targets" instance=ExtResource("5_daoqu")]
+transform = Transform3D(1, 0, 0, 0, -1, -8.74228e-08, 0, 8.74228e-08, -1, 13.2828, 1.48442, -1.11709)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -281,3 +309,6 @@ script = ExtResource("5_5yy7b")
 position = Vector2(586, 325)
 scale = Vector2(0.162109, 0.162109)
 texture = ExtResource("6_5yy7b")
+
+[node name="Sketchfab_Scene" parent="." instance=ExtResource("6_sudg6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.9203, 4.41543, -4.53528)

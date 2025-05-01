@@ -4,7 +4,7 @@ extends CharacterBody3D  # Ensure this is on a CharacterBody3D
 @export var jump_velocity: float = 5.0
 @export var mouse_sensitivity: float = 0.002  # Adjust sensitivity
 @export var joystick: VirtualJoystick
-var gravity = 16
+var gravity = 14
 
 @onready var head = $Head  # Reference to a pivot node
 @onready var camera = $Head/Camera3D  # Camera inside the head
