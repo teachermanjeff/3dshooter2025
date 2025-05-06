@@ -3,8 +3,7 @@ extends CharacterBody3D  # Ensure this is on a CharacterBody3D
 @export var speed: float = 5.0
 @export var jump_velocity: float = 5.0
 @export var mouse_sensitivity: float = 0.002  # Adjust sensitivity
-@export var joystick: VirtualJoystick
-var gravity = 14
+var gravity = 16
 
 @onready var head = $Head  # Reference to a pivot node
 @onready var camera = $Head/Camera3D  # Camera inside the head
@@ -26,11 +25,10 @@ func _physics_process(delta):
 	# Get movement input
 	var input = Input.get_vector("move_left", "move_right", "move_forward", "move_backward")
 	var direction = (basis * Vector3(input.x, 0, input.y)).normalized()
-	var joystick_direction = (basis * Vector3(joystick.output.x, 0, joystick.output.y)).normalized()
 
 	# Apply movement relative to player rotation
-	velocity.x = (direction.x + joystick_direction.x) * speed
-	velocity.z = (direction.z + joystick_direction.z) * speed
+	velocity.x = (direction.x) * speed
+	velocity.z = (direction.z) * speed
 
 	# Jumping
 	if Input.is_action_just_pressed("jump") and is_on_floor():
