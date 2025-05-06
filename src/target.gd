@@ -13,7 +13,6 @@ func _on_body_entered(body: Node3D):
 	reverse.tween_property(root_parent, "rotation_degrees", Vector3(0, 0, 0), 0.25)
 	reverse.stop()
 	tween.tween_callback(func f():
-		print("[Tween] reversing")
 		await get_tree().create_timer(1).timeout
 		reverse.play()
 	)
